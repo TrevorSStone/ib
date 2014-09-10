@@ -132,6 +132,7 @@ func (a *AbstractManager) startMainLoop(preLoop func() error, receive func(r Rep
 			}
 			return
 		}
+		time.Sleep(10 * time.Millisecond)
 	}
 }
 
